@@ -21,6 +21,7 @@ button {
   background: #e1ff8f;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  position: relative;
 }
 
 .welcome {
@@ -85,8 +86,67 @@ button {
   color: #000;
 }
 
+.hero__star-1 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.hero__star-2 {
+  position: absolute;
+  right: 0;
+}
+
+.hero__star-3 {
+  position: absolute;
+  top: 538px;
+  right: 455px;
+}
+
+.hero__star-4 {
+  position: absolute;
+  top: 568px;
+  right: 344px;
+}
+
+.hero__star-5 {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.hero__treangle {
+  position: absolute;
+  top: 468px;
+  right: 113px;
+}
+
+.hero__line-1 {
+  position: absolute;
+  right: 269px;
+}
+
+.hero__line-2 {
+  position: absolute;
+  top: 254px;
+  right: 231px;
+}
+
+.hero__line-3 {
+  position: absolute;
+  top: 379px;
+  right: 0;
+}
+
+.hero__line-4 {
+  position: absolute;
+  top: 663px;
+  right: 61px;
+}
+
 .about-games {
   background: #202027;
+  position: relative;
 }
 
 .about-games__content {
@@ -143,6 +203,7 @@ button {
   box-sizing: border-box;
   height: auto;
   transition: all 0.5s;
+  z-index: 1;
 }
 
 .game:hover {
@@ -198,4 +259,22 @@ button {
   font-weight: 700;
   font-size: 32px;
   color: #202027;
+}
+
+.about-games__star-1 {
+  position: absolute;
+  top: 77px;
+  right: 0;
+}
+
+.about-games__star-2 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+}
+
+.about-games__star-3 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
 }
