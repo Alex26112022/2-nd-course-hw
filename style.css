@@ -122,7 +122,7 @@ button {
 
 .games {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
   flex-direction: row;
   gap: 32px;
@@ -142,6 +142,11 @@ button {
   background: #fff;
   box-sizing: border-box;
   height: auto;
+  transition: all 0.5s;
+}
+
+.game:hover {
+  transform: scale(1.1);
 }
 
 .game__img {
