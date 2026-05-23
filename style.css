@@ -194,7 +194,6 @@ button {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 0px;
   border-radius: 30px;
   width: 378px;
   cursor: pointer;
@@ -242,7 +241,6 @@ button {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 0px;
   border-radius: 53px;
   padding: 8px 16px 10px;
   width: 108px;
