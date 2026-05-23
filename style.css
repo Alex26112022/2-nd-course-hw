@@ -1,0 +1,10 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero {
+  width: 1440px;
+  height: 800px;
+  background: #e1ff8f;
+}
