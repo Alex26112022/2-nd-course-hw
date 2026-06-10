@@ -399,3 +399,27 @@ button {
   color: #000;
   border: 1px solid #000;
 }
+
+.mini-games__star-1 {
+  position: absolute;
+  top: 93px;
+  right: 124px;
+}
+
+.mini-games__star-2 {
+  position: absolute;
+  top: 126px;
+  right: 45px;
+}
+
+.mini-games__star-3 {
+  position: absolute;
+  bottom: 45px;
+  right: 150px;
+}
+
+.mini-games__star-4 {
+  position: absolute;
+  bottom: 65px;
+  right: 52px;
+}
