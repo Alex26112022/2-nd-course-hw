@@ -392,6 +392,7 @@ button {
   text-align: center;
   color: #fff;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 .game__play:hover {
@@ -422,4 +423,19 @@ button {
   position: absolute;
   bottom: 65px;
   right: 52px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #bded35;
+}
+
+.footer__rights {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
 }
