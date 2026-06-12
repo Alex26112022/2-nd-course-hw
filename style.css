@@ -329,6 +329,10 @@ button {
   cursor: auto;
 }
 
+.game_mini:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
 .game_mini:hover {
   transform: none;
 }
