@@ -403,6 +403,7 @@ button {
   color: #fff;
   text-decoration: none;
   transition: all 0.2s;
+  box-sizing: border-box;
 }
 
 .game__play:hover {
@@ -495,10 +496,6 @@ button {
     transform: scale(0.614);
   }
 
-  .hero__star-2 {
-    display: none;
-  }
-
   .hero__star-2-mobile {
     display: block;
     position: absolute;
@@ -519,27 +516,108 @@ button {
     transform: scale(0.6);
   }
 
-  .hero__treangle {
-    display: none;
+  .mini-games {
+    padding-bottom: 10px;
   }
 
-  .hero__line-1 {
-    display: none;
+  .mini-games__content {
+    gap: 48px;
   }
 
-  .hero__line-2 {
-    display: none;
+  .mini-games__title {
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .hero__line-3 {
-    display: none;
+  .mini-games__plays {
+    margin: 0 auto;
+    gap: 24px;
   }
 
-  .hero__line-4 {
-    display: none;
+  .game_mini {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 
-  .about-games {
+  .game__img_mini {
+    width: 100%;
+    height: 284px;
+    order: -1;
+  }
+
+  .game__info_mini {
+    gap: 9px;
+    border-radius: 27px;
+    padding: 29px 29px 32px;
+    width: 100%;
+    min-height: 243px;
+    height: auto;
+  }
+
+  .game__content {
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+  }
+
+  .game__header {
+    gap: 16px;
+    width: 100%;
+  }
+
+  .game__title_mini {
+    font-size: 32px;
+  }
+
+  .game__description {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .game__play {
+    border: 1px solid #202027;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .go:hover {
+    background: #202027;
+    color: #fff;
+  }
+
+  .game__play:hover {
+    background: #202027;
+    color: #fff;
+  }
+
+  .game_mini:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .footer__rights {
+    font-size: 16px;
+  }
+
+  .hero__star-2,
+  .hero__treangle,
+  .hero__line-1,
+  .hero__line-2,
+  .hero__line-3,
+  .hero__line-4,
+  .about-games,
+  .mini-games__star-1,
+  .mini-games__star-2,
+  .mini-games__star-3,
+  .mini-games__star-4 {
     display: none;
   }
 }
