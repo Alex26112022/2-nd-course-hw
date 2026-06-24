@@ -43,7 +43,7 @@ const toCube = (num) => {
 };
 
 for (let start = 0; start <= 10; start++) {
-  console.log(toCube(start));
+  alert(toCube(Number(prompt('Введите число...'))));
 }
 
 const getArea = function () {
