@@ -1,5 +1,8 @@
 const playGame = {
   simpleQuiz: simpleQuiz,
+  turnTheText: turnTheText,
+  simpleArithmetic: simpleArithmetic,
+  guessTheNumber: guessTheNumber,
 };
 
 function simpleQuiz() {
@@ -38,4 +41,16 @@ function simpleQuiz() {
   } else resultMessage = `Вы ответили правильно на ${countTrue} ${word}!`;
 
   alert(resultMessage);
+}
+
+function turnTheText() {
+  console.log('Заглушка');
+}
+
+function simpleArithmetic() {
+  console.log('Заглушка');
+}
+
+function guessTheNumber() {
+  console.log('Заглушка');
 }
