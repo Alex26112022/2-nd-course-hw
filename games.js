@@ -56,14 +56,20 @@ function simpleArithmetic() {
     '*': (a, b) => a * b,
     '/': (a, b) => a / b,
   };
+
   const randomActions = ['+', '-', '*', '/'];
-  const num1 = Math.floor(Math.random() * 100 + 1);
-  const num2 = Math.floor(Math.random() * 100 + 1);
+  const isFirstSmall = Math.random() < 0.5;
+  const num1 = Math.floor(Math.random() * (isFirstSmall ? 10 : 100) + 1);
+  const num2 = Math.floor(Math.random() * (isFirstSmall ? 100 : 10) + 1);
   const numAction = Math.floor(Math.random() * 4);
   const strAction = randomActions[numAction];
   const result = Math.round(calculator[strAction](num1, num2));
   const question = `Решите задачу\n${num1} ${strAction} ${num2}`;
-  const userAnswer = Number(prompt(question));
+
+  const userRawData = prompt(question);
+  if (userRawData === null) return;
+
+  const userAnswer = Number(userRawData);
   const isCorrect = userAnswer === result;
 
   alert(`Ответ ${isCorrect ? 'верный' : 'неверный'}!`);
@@ -73,7 +79,10 @@ function guessTheNumber() {
   const targetNumber = Math.floor(Math.random() * 100 + 1);
   const hints = { true: 'бери больше!', false: 'бери меньше!' };
   while (true) {
-    const userNumber = Number(prompt('Угадайте случайное число от 1 до 100!'));
+    const userRawData = prompt('Угадайте случайное число от 1 до 100!');
+    if (userRawData === null) return;
+
+    const userNumber = Number(userRawData);
     if (userNumber === targetNumber) {
       alert('Поздравляю! Вы угадали!');
       return;
