@@ -96,5 +96,32 @@ function guessTheNumber() {
 }
 
 function rockPaperScissors() {
-  alert('Заглушка');
+  const robotChoices = ['камень', 'ножницы', 'бумага'];
+  const randomIndex = Math.floor(Math.random() * 3);
+  const randomRobotChoice = robotChoices[randomIndex];
+  const userRawInput = prompt('Выберите "камень", "ножницы" или "бумага"');
+
+  if (userRawInput === null) return;
+
+  const userChoice = userRawInput.toLowerCase().trim();
+
+  if (!robotChoices.includes(userChoice)) {
+    alert('Введены некорректные данные!');
+    return;
+  }
+
+  const rules = { камень: 'ножницы', ножницы: 'бумага', бумага: 'камень' };
+  let result;
+
+  if (userChoice === randomRobotChoice) {
+    result = 'Ничья!';
+  } else if (rules[userChoice] === randomRobotChoice) {
+    result = 'Поздравляю! Ты выиграл!';
+  } else {
+    result = 'Ты проиграл!';
+  }
+
+  alert(
+    `Компьютер: "${randomRobotChoice}"   Игрок: "${userChoice}"\n${result}`
+  );
 }
