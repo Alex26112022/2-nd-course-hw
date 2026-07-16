@@ -3,6 +3,7 @@ const playGame = {
   turnTheText: turnTheText,
   simpleArithmetic: simpleArithmetic,
   guessTheNumber: guessTheNumber,
+  rockPaperScissors: rockPaperScissors,
 };
 
 function simpleQuiz() {
@@ -92,4 +93,8 @@ function guessTheNumber() {
     }
     alert(hints[`${targetNumber > userNumber}`]);
   }
+}
+
+function rockPaperScissors() {
+  alert('Заглушка');
 }
