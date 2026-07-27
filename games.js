@@ -4,6 +4,7 @@ const playGame = {
   simpleArithmetic: simpleArithmetic,
   guessTheNumber: guessTheNumber,
   rockPaperScissors: rockPaperScissors,
+  randomColorGenerator: randomColorGenerator,
 };
 
 function simpleQuiz() {
@@ -124,4 +125,12 @@ function rockPaperScissors() {
   alert(
     `Компьютер: "${randomRobotChoice}"   Игрок: "${userChoice}"\n${result}`
   );
+}
+
+function randomColorGenerator() {
+  let redColor = Math.floor(Math.random() * 256);
+  let greenColor = Math.floor(Math.random() * 256);
+  let blueColor = Math.floor(Math.random() * 256);
+  document.body.style.transition = 'background-color 0.5s ease';
+  document.body.style.backgroundColor = `rgb(${redColor} ${greenColor} ${blueColor})`;
 }
