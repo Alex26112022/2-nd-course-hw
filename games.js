@@ -33,6 +33,7 @@ function simpleQuiz() {
     let userAnswer = prompt(
       `${item['question']}\n${item['options'].join('\n')}`
     );
+    if (userAnswer === null) return;
     if (Number(userAnswer) === item['correctAnswer']) countTrue++;
   }
 
@@ -47,6 +48,7 @@ function simpleQuiz() {
 
 function turnTheText() {
   const userText = prompt('Введите текст!');
+  if (!userText) return;
   const result = userText.split('').reverse().join('');
   alert(result);
 }
