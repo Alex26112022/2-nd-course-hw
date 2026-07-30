@@ -136,3 +136,11 @@ function randomColorGenerator() {
   document.body.style.transition = 'background-color 0.5s ease';
   document.body.style.backgroundColor = `rgb(${redColor} ${greenColor} ${blueColor})`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.querySelector('.hero__wrapper');
+  const group = document.querySelector('.hero__group');
+
+  const clone = group.cloneNode(true);
+  wrapper.appendChild(clone);
+});
