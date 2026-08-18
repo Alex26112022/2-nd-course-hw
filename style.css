@@ -91,6 +91,58 @@ button {
   color: #000;
 }
 
+.hero__line-games {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  background: #bcec30;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hero__wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.hero__group {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding-right: 51px;
+  flex-shrink: 0;
+}
+
+.hero__line-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #202027;
+  white-space: nowrap;
+}
+
+.hero__line-star {
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .hero__star-1 {
   position: absolute;
   top: 94px;
@@ -490,6 +542,25 @@ button {
     width: 285px;
     height: 55px;
     font-size: 16px;
+  }
+
+  .hero__line-games {
+    height: 51px;
+  }
+
+  .hero__group {
+    gap: 27px;
+    padding-right: 27px;
+  }
+
+  .hero__line-text {
+    font-size: 16px;
+  }
+
+  .hero__line-star {
+    transform: scale(0.556);
+    display: inline-flex;
+    flex-shrink: 0;
   }
 
   .hero__star-1 {

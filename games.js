@@ -33,6 +33,7 @@ function simpleQuiz() {
     let userAnswer = prompt(
       `${item['question']}\n${item['options'].join('\n')}`
     );
+    if (userAnswer === null) return;
     if (Number(userAnswer) === item['correctAnswer']) countTrue++;
   }
 
@@ -47,6 +48,7 @@ function simpleQuiz() {
 
 function turnTheText() {
   const userText = prompt('Введите текст!');
+  if (!userText) return;
   const result = userText.split('').reverse().join('');
   alert(result);
 }
@@ -134,3 +136,11 @@ function randomColorGenerator() {
   document.body.style.transition = 'background-color 0.5s ease';
   document.body.style.backgroundColor = `rgb(${redColor} ${greenColor} ${blueColor})`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.querySelector('.hero__wrapper');
+  const group = document.querySelector('.hero__group');
+
+  const clone = group.cloneNode(true);
+  wrapper.appendChild(clone);
+});
